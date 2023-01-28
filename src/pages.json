@@ -1,0 +1,262 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/homePage/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/jobJacket/index",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTextStyle": "white" // 状态栏字体为白色，只能为 white-白色，black-黑色 二选一
+			}
+		},
+		{
+			"path": "pages/jobJacket/resolveTask",
+			"style": {
+				"navigationBarTitleText": "任务分解"
+			}
+		},
+		{
+			"path": "pages/jobJacket/progressTask",
+			"style": {
+				"navigationBarTitleText": "进度更新"
+			}
+		},
+		{
+			"path": "pages/jobJacket/subtask",
+			"style": {
+				"navigationBarTitleText": "子任务"
+			}
+		},
+		{
+			"path": "pages/jobJacket/detail",
+			"style": {
+				"navigationBarTitleText": "任务详情"
+			}
+		},
+		{
+			"path": "pages/msgCenter/index",
+			"style": {
+				"navigationBarTitleText": "消息",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/myCenter/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"app-plus": {
+					"titleNView": false
+				}
+
+			}
+		}
+	],
+	"subPackages": [{
+		"root": "pagesA",
+		"pages": [{
+				"path": "pages/periodTask/index",
+				"style": {
+					"navigationBarTitleText": "周期任务"
+				}
+			},
+			{
+				"path": "pages/periodTask/creatTask-1",
+				"style": {
+					"navigationBarTitleText": "创建周期任务"
+				}
+			},
+			{
+				"path": "pages/periodTask/creatTask-2",
+				"style": {
+					"navigationBarTitleText": "创建周期任务"
+				}
+			},
+			{
+				"path": "pages/periodTask/detail-1",
+				"style": {
+					"navigationBarTitleText": "周期任务详情"
+				}
+			},
+			{
+				"path": "pages/periodTask/detail",
+				"style": {
+					"navigationBarTitleText": "周期任务个人详情"
+				}
+			},
+			{
+				"path": "pages/periodTask/issue-detail",
+				"style": {
+					"navigationBarTitleText": "周期下发详情"
+				}
+			},
+			{
+				"path": "pages/draftBox/index",
+				"style": {
+					"navigationBarTitleText": "草稿箱"
+				}
+			},
+
+			{
+				"path": "pages/draftBox/creatTask",
+				"style": {
+					"navigationBarTitleText": "创建普通任务"
+				}
+			},
+			{
+				"path": "pages/havePublished/index",
+				"style": {
+					"navigationBarTitleText": "已发布"
+				}
+			},
+			{
+				"path": "pages/havePublished/details",
+				"style": {
+					"navigationBarTitleText": "查看任务"
+				}
+			},
+			{
+				"path": "pages/audit/index",
+				"style": {
+					"navigationBarTitleText": "待审核"
+				}
+			},
+			{
+				"path": "pages/audit/audit-detail",
+				"style": {
+					"navigationBarTitleText": "审核详情"
+				}
+			},
+			{
+				"path": "pages/completed/index",
+				"style": {
+					"navigationBarTitleText": "已完成"
+				}
+			},
+			{
+				"path": "pages/completed/detail",
+				"style": {
+					"navigationBarTitleText": "完成详情"
+				}
+			},
+			{
+				"path": "pages/distribute/index",
+				"style": {
+					"navigationBarTitleText": "分配情况"
+				}
+			},
+			{
+				"path": "pages/taskOverview/index",
+				"style": {
+					"navigationBarTitleText": "情况总览"
+				}
+			},
+			{
+				"path": "pages/performance/index",
+				"style": {
+					"navigationBarTitleText": "完成情况"
+				}
+			},
+			{
+				"path": "pages/responsivity/index",
+				"style": {
+					"navigationBarTitleText": "响应度分析"
+				}
+			},
+			{
+				"path": "pages/personnel/index",
+				"style": {
+					"navigationBarTitleText": "人员进度巡检"
+				}
+			},
+			
+		  {
+			"path": "pages/overdueTask/index",
+			"style": {
+				"navigationBarTitleText": "逾期任务情况"
+			  }
+		  },
+		  {
+			"path": "pages/taskPlan/index",
+			"style": {
+				"navigationBarTitleText": "任务进度巡检"
+			  }
+		  },
+			{
+			"path": "pages/taskPlan/details",
+			"style": {
+				"navigationBarTitleText": "任务详情"
+			  }
+			},
+		  {
+		  			"path": "pages/temporary/index",
+		  			"style": {
+		  				"navigationBarTitleText": "临期巡检"
+		  			  }
+		  },
+		  {
+		  			"path": "pages/temporary/detail",
+		  			"style": {
+		  				"navigationBarTitleText": "临期巡检详情"
+		  			  }
+		  }
+
+
+		]
+	}],
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#4A82E9",
+		"backgroundColor": "#FEFEFE",
+		"list": [{
+				"pagePath": "pages/homePage/index",
+				"text": "首页",
+				"iconPath": "static/images/tabbar/index.png",
+				"selectedIconPath": "static/images/tabbar/index_hl.png"
+			},
+			{
+				"pagePath": "pages/jobJacket/index",
+				"text": "任务夹",
+				"iconPath": "static/images/tabbar/task.png",
+				"selectedIconPath": "static/images/tabbar/task_hl.png"
+			},
+			{
+				"pagePath": "pages/msgCenter/index",
+				"text": "消息",
+				"iconPath": "static/images/tabbar/msg.png",
+				"selectedIconPath": "static/images/tabbar/msg_hl.png"
+			},
+			{
+				"pagePath": "pages/myCenter/index",
+				"text": "我的",
+				"iconPath": "static/images/tabbar/my.png",
+				"selectedIconPath": "static/images/tabbar/my_hl.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "企业负责人履职平台",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#ffffff",
+		"app-plus": {
+			"bounce": "none"
+		}
+	}
+}
